@@ -54,7 +54,7 @@ button{
     font-size: 0.8rem;
 }
 
-.comunity button{
+.comunity button, .ready button{
     background-color: var(--pink);
     color: var(--veryPaleBlue);
     padding: 0.8rem 2rem;
@@ -97,8 +97,58 @@ button{
     padding: 2rem;
 }
 
-.together img{
+.together img, .conversations img, .users img{
     width: 90%;
+    height: 90%;
+}
+
+.conversations{
+    text-align: center;
+    padding-top: 10rem;
+    background-image: url('./images/bg-section-bottom-mobile-1.svg');
+    background-repeat: no-repeat;    
+}
+
+.conversations img, .conversations h3, .conversations p{
+    padding: 0 2rem;
+}
+
+.conversations img, .users img{
+    margin-bottom: 3rem;
+}
+
+.conversations::after{
+    content: "";
+    background-image: url('./images/bg-section-top-mobile-2.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;    
+    height: 40vh;
+    width: 100%;
+    display: block;
+}
+
+.users{
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--veryPaleBlue);
+}
+
+.ready{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 2rem;
+    background-image: url('./images/bg-section-bottom-mobile-2.svg');
+    background-repeat: no-repeat;
+}
+
+.ready h4{
+    font-size: 1.8rem;
+    margin-bottom: 0;
 }
 
 
