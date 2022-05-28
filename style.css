@@ -1,0 +1,117 @@
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --lightPink: hsl(321, 100%, 78%);
+    --lightRed: hsl(0, 100%, 63%);
+    --veryDarkCyan: hsl(192, 100%, 9%);
+    --veryPaleBlue: hsl(207, 100%, 98%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;    
+}
+
+main{
+    color: var(--veryDarkCyan);
+}
+
+header{
+    padding: 2rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 40%;
+    height: 40%;
+}
+
+h1, h2, h3, button{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    border: solid 1.5px var(--lightPink);
+    background-color: transparent;
+    border-radius: 5rem;
+    padding: 0.3rem 1rem;
+    color: var(--lightPink);
+    box-shadow: 0.5px 0.5px 3px var(--lightPink);
+}
+
+.comunity{
+    margin-top: 5rem;
+    text-align: center;
+    color: var(--veryDarkCyan);
+    font-size: 0.8rem;
+}
+
+.comunity button{
+    background-color: var(--pink);
+    color: var(--veryPaleBlue);
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+}
+
+.mockup{
+    width: 90%;
+    height: 90%;
+    margin: 5rem auto 0;
+    display: block;
+}
+
+.followers{
+    background-image: url('./images/bg-section-top-mobile-1.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 2rem 2rem 8rem;
+}
+
+.followers div{
+    width: 31vh;
+    margin: auto;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.followers h2{
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.followers p{
+    margin-top: 0;
+}
+
+.together{
+    text-align: center;
+    background-color: var(--veryPaleBlue);
+    padding: 2rem;
+}
+
+.together img{
+    width: 90%;
+}
+
+
+
+
+
+
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
