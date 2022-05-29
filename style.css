@@ -76,7 +76,7 @@ button{
     padding: 2rem 2rem 8rem;
 }
 
-.followers div{
+.quantity div{
     width: 31vh;
     margin: auto;
     text-align: left;
@@ -103,11 +103,12 @@ button{
     height: 90%;
 }
 
-.conversations{
+.conversations_container{
     text-align: center;
     padding-top: 10rem;
     background-image: url('./images/bg-section-bottom-mobile-1.svg');
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat; 
+    background-size: contain;   
 }
 
 .conversations img, .conversations h3, .conversations p{
@@ -228,5 +229,94 @@ input[type='button']{
 @media (min-width:475px) {
     .ready::after{
         height: 16rem;
+    }
+}
+
+@media (min-width:600px) {
+    nav img{
+        width: 20%;
+        height: 20%;
+    }
+
+    .comunity{
+        margin-top: 8rem;
+    }
+
+    .comunity p{
+        width: 40%;
+        margin: auto;
+    }
+
+    .mockup{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .followers{
+        background-image: url('./images/bg-section-top-desktop-1.svg');
+    }
+
+    .quantity{
+        display: flex;
+        align-items: center;
+    }
+
+    .together img, .conversations img, .users img{
+        width: 40%;
+        height: 40%;
+    }
+
+    .together p, .conversations p, .users p{
+        width: 80%;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+
+    .together{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
+        padding: 5rem;
+    }
+
+    
+
+    .conversations_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;        
+        background-image: url('./images/bg-section-bottom-desktop-1.svg');
+        padding: 10rem 3rem 3rem;
+    }
+
+    .conversations img, .users img{
+        margin-bottom: 0;
+    }
+
+    
+    .conversations::after{
+        background-image: url('./images/bg-section-top-desktop-2.svg');
+        height: 25vh;
+    }
+
+    .users{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        text-align: justify;
+        padding: 3rem 5rem;
+    }
+
+    .ready{
+        background-image: url('./images/bg-section-bottom-desktop-2.svg');
+        height: 75vh;
+    }
+
+    .ready::after{
+        background-image: url('./images/bg-footer-top-desktop.svg');
+        height: 32vh;
     }
 }
