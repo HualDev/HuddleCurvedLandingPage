@@ -220,6 +220,7 @@ input[type='button']{
     font-size: 0.8rem;
     text-align: center;
     padding: 1rem;
+    margin-bottom: 0;
 }
 
 .attribution a {
@@ -318,5 +319,80 @@ input[type='button']{
     .ready::after{
         background-image: url('./images/bg-footer-top-desktop.svg');
         height: 32vh;
+    }
+
+    .footer_main{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 7rem 3rem 0;
+        font-size: 0.7rem;
+    }
+
+    .footer_logo{
+        width: 30%;
+        height: 30%;
+    }
+
+    .footer_contact, .newsletter{
+        width: 45%;
+    }
+
+    .footer_contact p{
+        font-size: 0.7rem;
+    }
+
+    .footer_contact div img{
+        width: 4%;
+        height: 4%;
+    }
+
+    h5{
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    input{
+        width: 55%;
+    }
+
+    input[type='button']{
+        width: 35%;
+        margin-left: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .newsletter{
+        padding-top: 0;
+    }
+
+    .newsletter div{
+        text-align: justify;
+    }
+
+    .social{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:950px) {
+    .together p, .conversations p, .users p{
+        width: 60%;
+    }
+
+    .conversations p{
+        margin: auto;
+
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .conversations h3{
+        text-align: justify;
+        width: 60%;
+        margin: auto auto 0.8rem;
     }
 }
