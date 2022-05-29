@@ -98,9 +98,10 @@
             send you spam or pass on your email address
           </p>
           <div>
-            <input type="email">
-            <input type="button" value="Subscribe">
+            <input id="email" type="email">
+            <input type="button" value="Subscribe" onClick="pruebaemail(email.value)">            
           </div>
+          <label id="error" class="nShow" for="email">Check Your email please</label>
         </div>
 
         <div class="footer_contact">
@@ -118,18 +119,20 @@
             <p>example@huddle.com</p>
           </div>
           <div class="social">
-            <i class="fa fa-facebook-square"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-twitter-square"></i>
+            <span><i class="fa fa-facebook-square"></i></span>
+            <span><i class="fa fa-instagram"></i></span>
+            <span><i class="fa fa-twitter-square"></i></span>
           </div>
         </div>
       </div>
       
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">HualDev</a>.
+        Coded by <a href="https://hualdevportafolio.netlify.app" target="_blank">HualDev</a>.
       </p>
     </footer>
   </main>
+
+  <script src="./huddle.js"></script>
 </body>
 </html>

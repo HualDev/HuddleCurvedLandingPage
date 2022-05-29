@@ -47,6 +47,11 @@ button{
     box-shadow: 0.5px 0.5px 3px var(--lightPink);
 }
 
+button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
 .comunity{
     margin-top: 5rem;
     text-align: center;
@@ -197,6 +202,29 @@ input[type='button']{
     font-weight: 700;
 }
 
+input[type='button']:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+label{
+    color: var(--lightRed);
+    display: block;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    font-size: 0.7rem;
+    margin-top: -3.3rem;
+}
+
+.nShow{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
 .footer_contact{
     padding: 0 2rem;
 }
@@ -214,6 +242,11 @@ input[type='button']{
 .social{
     margin-top: 1.5rem;
     font-size: 2rem;
+}
+
+.social span:hover{
+    color: cyan;
+    cursor: pointer;
 }
 
 .attribution {
@@ -280,9 +313,7 @@ input[type='button']{
         align-items: center;
         text-align: justify;
         padding: 5rem;
-    }
-
-    
+    }    
 
     .conversations_container{
         display: flex;
@@ -363,6 +394,12 @@ input[type='button']{
         font-size: 0.8rem;
     }
 
+    label{
+        margin-top: 0;
+        text-align: justify;
+        margin: 0;
+    }
+
     .newsletter{
         padding-top: 0;
     }
@@ -379,15 +416,15 @@ input[type='button']{
 @media (min-width:950px) {
     .together p, .conversations p, .users p{
         width: 60%;
+        font-size: 0.8rem;
     }
 
     .conversations p{
         margin: auto;
-
     }
 
     h3{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .conversations h3{
