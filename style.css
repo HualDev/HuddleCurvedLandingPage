@@ -72,6 +72,7 @@ button{
     background-image: url('./images/bg-section-top-mobile-1.svg');
     background-repeat: no-repeat;
     background-position: center bottom;
+    background-size: contain;
     padding: 2rem 2rem 8rem;
 }
 
@@ -135,15 +136,24 @@ button{
 }
 
 .ready{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     height: 100vh;
     justify-content: center;
     text-align: center;
-    padding: 8rem 2rem 2rem;
+    padding: 8rem 0 0;
     background-image: url('./images/bg-section-bottom-mobile-2.svg');
     background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.ready::after{
+    content: "";
+    background-image: url('./images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;    
+    height: 40vh;
+    width: 100%;
+    display: block;
 }
 
 .ready h4{
@@ -151,17 +161,72 @@ button{
     margin-bottom: 0;
 }
 
+footer{
+    background-color: var(--veryDarkCyan);
+    color: var(--veryPaleBlue);
+}
 
+h5{
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
 
+.newsletter{
+    padding: 5rem 2rem;
+}
 
+.newsletter div{
+    text-align: right;
+}
 
+input{
+    width: 90%;
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+}
 
+input[type='button']{
+    background-color: var(--pink);
+    color: var(--veryPaleBlue);
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer_contact{
+    padding: 0 2rem;
+}
+
+.footer_contact p{
+    font-size: 0.9rem;
+}
+
+.footer_contact div{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;    
+}
+
+.social{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
 
 .attribution {
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
+    padding: 1rem;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:475px) {
+    .ready::after{
+        height: 16rem;
+    }
 }
