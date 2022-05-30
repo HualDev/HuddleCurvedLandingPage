@@ -151,14 +151,11 @@ button:hover{
     background-size: contain;
 }
 
-.ready::after{
-    content: "";
+.principal{
     background-image: url('./images/bg-footer-top-mobile.svg');
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: contain;    
-    height: 40vh;
-    width: 100%;
+    background-size: contain; 
     display: block;
 }
 
